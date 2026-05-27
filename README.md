@@ -1,7 +1,7 @@
 # Vilnius Air Pollution Analysis (March 21 – April 8, 2026)
 
 ## Introduction
-This is a data-driven investigation into the temporal and spatial variations of ambient air pollution ($PM_{2.5}$ / $PM_{10}$) across different urban sectors in Vilnius, Lithuania. The study spans from **March 21 to April 8, 2026**, capturing a crucial early-spring transitional meteorological period. Data was collected from iqair.com, archyvas.meteo.lt and judu.lt websites. Some data is missing. The air quality data was collected evey day from the time period at 18:00, but the rest of the data is from an hour earlier because it was assumed the effect (air quality data) could take time to appear.
+This is a data-driven investigation into the temporal and spatial variations of ambient air pollution ($PM_{2.5}$ / $PM_{10}$) across different urban sectors in Vilnius, Lithuania. The study spans from **March 21 to April 8, 2026**, capturing a crucial early-spring transitional meteorological period. Data was collected from iqair.com, archyvas.meteo.lt and judu.lt websites. Some data is missing. The air quality data was collected every day from the time period at 18:00, but the rest of the data is from an hour earlier because it was assumed the effect (air quality data) could take time to appear.
 
 The primary objective of this analysis was to determine whether air quality fluctuations during these weeks were governed by local anthropogenic activities (such as traffic variations) or large-scale macro environmental drivers (such as temperature and wind behavior).
 
