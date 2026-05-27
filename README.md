@@ -17,9 +17,7 @@ Urban particulate matter air pollution typically stems from three main sources: 
 ### City-Wide Synchronous Decline
 An analysis of the data revealed that particulate matter concentrations exhibited a nearly identical downward trend across most of the monitoring stations in the city. 
 
-<img width="1795" height="708" alt="Image" src="https://github.com/user-attachments/assets/408b0152-4606-4243-9612-80da24075edb" />
-<p align="left" style="margin-top: 5px; margin-bottom: 30px;"><em>Figure 1: Air pollution variations recorded across multiple tracking sectors in Vilnius. The vertical blue lines mark weekend days.</em>
-</p>
+![Daily Median Pollution vs Temperature](Rplot.png)
 
 As shown in **Figure 1**, despite geographical differences—ranging from high-traffic zones like *Saltoniškes* and *Savanoriai/Vilkpėdė* to greener neighborhoods like *Turniškės/Nugalėtojų g.*—the pollution metrics peaks and valleys move in unison. Because local vehicle usage does not drop simultaneously across the entire city, this synchronous multi-regional decline indicates that a global, macro-scale variable was driving the overall air cleaning process. 
 
