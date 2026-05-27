@@ -17,7 +17,8 @@ Urban particulate matter air pollution typically stems from three main sources: 
 ### City-Wide Synchronous Decline
 An analysis of the data revealed that particulate matter concentrations exhibited a nearly identical downward trend across most of the monitoring stations in the city. 
 
-![Daily Median Pollution vs Temperature](Rplot.png)
+![](Rplot.png)
+Figure 1: Air pollution in different Vilnius districts.
 
 As shown in **Figure 1**, despite geographical differences—ranging from high-traffic zones like *Saltoniškes* and *Savanoriai/Vilkpėdė* to greener neighborhoods like *Turniškės/Nugalėtojų g.*—the pollution metrics peaks and valleys move in unison. Because local vehicle usage does not drop simultaneously across the entire city, this synchronous multi-regional decline indicates that a global, macro-scale variable was driving the overall air cleaning process. 
 
@@ -34,9 +35,8 @@ To validate whether local traffic could be ruled out as the primary cause of the
 
 ### 1. Traffic Volume Consistency
 
-<img width="1795" height="708" alt="Image" src="https://github.com/user-attachments/assets/0f822957-0e4b-4a78-b21d-71567c349e46" />
-<p align="left" style="margin-top: 5px; margin-bottom: 30px;"><em>Figure 2: Traffic volume in different Vilnius streets.</em>
-</p>
+![](Rplot03.png)
+Figure 2: Traffic numbers in different Vilnius streets.
 
 Line charts plotting the daily volume of passing vehicles across various target streets showed that traffic numbers declined during weekends, but don't show a long-term decline throughout the entire observation window. Because vehicle counts did not drop, changes in traffic volume cannot explain the massive city-wide drops in pollution. To ensure the traffic numbers were stable, Man-Kendall tests were applied to every street. These tests check the null hypothesis that a time series has no trend. In all the cases the p-value was more than 0.05 therefore it can be said that there's not enough evidence to say traffic numbers were declining or ascending.
 
@@ -45,16 +45,16 @@ To study the impact on air quality from chosen roads, the datasets were filtered
 
 ### 3. Traffic vs. Wind Speed Interactions
 
-<img width="1795" height="585" alt="Image" src="https://github.com/user-attachments/assets/6ae00fb1-2380-414a-8a07-f913bb800670" />
-<p align="left" style="margin-top: 5px; margin-bottom: 30px;"><em>Figure 3: Scatterplots of traffic volume and nearest station pollution index in different streets.</em>
-</p>
+![](Rplot04.png)
+Figure 3: Scatterplots of traffic volume and nearest station pollution index in different streets.
+
 
 After applying the filter it can be seen if Figure 3, that in most streets the dependance of air pollution from number of passing vehicles in the street is positive. However, if a correlation test was conducted with this data, it would give a p-value bigger than 0.05 which would mean the correlation is insignificant. The reason for this is that there's too few data to see a significant correlation. 
 
 
-<img width="1795" height="585" alt="Image" src="https://github.com/user-attachments/assets/f5d06755-8ee6-48da-9623-889f0ce47ed2" />
-<p align="left" style="margin-top: 5px; margin-bottom: 30px;"><em>Figure 4 : Scatterplots of wind speed and nearest station pollution index in different streets.</em>
-</p>
+![](Rplot05.png)
+Figure 4 : Scatterplots of wind speed and nearest station pollution index in different streets.
+
 
 In Figure 4 it can be seen that in most cases, there's a negative relation between wind speed and air pollution. This is because higher wind speeds act as a heavy dispersion mechanism, sweeping particles out of the urban canopy. Conversely, low wind speeds allow traffic emissions to stagnate and pool locally. This atmospheric trapping explains why certain days suffered high pollution spikes even when traffic volume was lower than average. 
 
@@ -65,9 +65,8 @@ Not all the streets were analysed because either there was no data about the nec
 
 To extract the overarching signal from the regional noise, the **daily median pollution** index was calculated across all combined Vilnius stations and statistically evaluated against the city's temperature profile.
 
-<img width="1671" height="708" alt="Image" src="https://github.com/user-attachments/assets/66491e90-c038-43cc-b269-bfab2c45a961" />
-<p align="left" style="margin-top: 5px; margin-bottom: 30px;"><em>Figure 5: Daily median air pollution trend for Vilnius.</em>
-</p>
+![](Rplot01.png)
+Figure 5: Daily median air pollution trend for Vilnius.
 
 A formal correlation test (`cor.test`) was executed to evaluate the strength and validity of the relationship between the daily median pollution (**Figure 2**) and the dropping temperature.
 * **Statistical Output:** The test showed a correlation of 0.597 and a highly significant result with a **p-value $< 0.05$**.
