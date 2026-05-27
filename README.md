@@ -58,7 +58,8 @@ Figure 4 : Scatterplots of wind speed and nearest station pollution index in dif
 
 In Figure 4 it can be seen that in most cases, there's a negative relation between wind speed and air pollution. This is because higher wind speeds act as a heavy dispersion mechanism, sweeping particles out of the urban canopy. Conversely, low wind speeds allow traffic emissions to stagnate and pool locally. This atmospheric trapping explains why certain days suffered high pollution spikes even when traffic volume was lower than average. 
 
-Not all the streets were analysed because either there was no data about the necessary streets or there was no wind direction that 
+Not all the streets were analysed because either there was no data about the necessary streets or there was no wind direction that blew from the streets to the station.
+
 ---
 
 ## Macro Analysis: Daily Median Pollution vs. Temperature
