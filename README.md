@@ -89,5 +89,5 @@ Based on the quantitative and physical evidence gathered between March 21 and Ap
 
 ## Technical Specifications
 * **Environment:** RStudio 
-* **Key Statistical Tests:** Pearson Correlation (`cor.test`)
-* **Core Libraries:** Kendall
+* **Statistical Tests:** Pearson Correlation (`cor.test`), Mann-Kendall (`MannKendall`)
+* **Libraries:** Kendall
